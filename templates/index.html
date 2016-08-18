@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% set page_title = 'Home' %}
+
+{% block body %}
+<div>
+    <h1 class="center">Adder</h1>
+    <p class="center">Let's add 2 numbers!</p>
+    <div id="content">
+    	<div class="row">
+    	  <div class="col-lg-6">
+		      <label for="n1">Number 1</label>
+		      <input name="n1" type="text"  />
+	      </div>
+	      <div class="col-lg-6">
+			  <label for="n2">Number 2</label>
+			  <input name="n2" type="text"/>
+		  </div>
+		</div>
+		<div class="text-center">
+		<button type="button" class="btn btn-success red" id="calculate">Go!</button>
+		</div>
+    </div>
+    <h1 class="text-center" id="result" style="font-size:70px">?</span>
+</div>
+{% endblock %}

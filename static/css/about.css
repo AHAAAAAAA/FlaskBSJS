@@ -1,0 +1,17 @@
+#about-image{
+	margin-bottom: 10px;
+}
+#about-table{
+    border-radius: 5px;
+    width: 30%;
+    margin: 0px auto;
+    float: none;
+    text-align: center;
+}
+#about-summary{
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    margin: 0px auto;
+    float: none;
+}

@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+{% set page_title = 'Home' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+{% block body %}
+<div>
+	<a href="https://twitter.com/{{data.twitter}}"><img src="{{ppimg}}" width=200 height=200 class="img-circle center-block" id="about-image"></a>
+	<p id="about-summary">{{data.summary}}</p>
+	<table class="table" id="about-table">
+	  <tbody>
+	    <tr>
+	      <th scope="row"><b>Name</b></th>
+	      <td>{{data.name}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row"><b>Age</b></th>
+	      <td>{{data.age}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row"><b>Email</b></th>
+	      <td>{{data.email}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row"><b>Twitter</b></th>
+	      <td><a href="https://twitter.com/{{data.twitter}}">{{data.twitter}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row"><b>Github</b></th>
+	      <td><a href="https://github.com/{{data.github}}">{{data.github}}</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+{% endblock %}
