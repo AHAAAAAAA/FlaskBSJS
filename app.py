@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, jsonify
@@ -11,7 +12,7 @@ def home():
 @app.route('/about') #About page
 def about():
 	# Passing on data to About page
-	data = {"name":"Ahmed", "age":22, "email":"Ahmed.Almutawa@colorado.edu", 
+	data = {"name":"Ahmed", "age":22, "email":"Ahmed.Almutawa@colorado.edu",
 			"twitter":"waishda", "github":"AHAAAAAAA", "summary":"Blah, blah, blah."}
 	ppimg = "https://pbs.twimg.com/profile_images/681195421629296641/Ioaz3eKA_400x400.jpg"
 	return render_template('about.html', data=data, ppimg=ppimg)
@@ -20,7 +21,7 @@ def about():
 def submit():
 	a = request.args.get('n1', 0, type=int)
 	b = request.args.get('n2', 0, type=int)
-	print a, b
+	print(a, b)
 	return jsonify(result=a + b)
 
 if __name__ == '__main__':
