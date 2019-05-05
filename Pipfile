@@ -8,6 +8,8 @@ name = "pypi"
 redis = "*"
 werkzeug = "*"
 flask = "*"
+"flake8" = "*"
+pylint = "*"
 
 [dev-packages]
 

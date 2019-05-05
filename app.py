@@ -13,7 +13,7 @@ def home():
 def about():
 	# Passing on data to About page
 	data = {"name":"Ahmed", "age":22, "email":"Ahmed.Almutawa@colorado.edu",
-			"twitter":"waishda", "github":"AHAAAAAAA", "summary":"Blah, blah, blah."}
+                "twitter":"waishda", "github":"AHAAAAAAA", "summary":"Blah, blah, blah."}
 	ppimg = "https://pbs.twimg.com/profile_images/681195421629296641/Ioaz3eKA_400x400.jpg"
 	return render_template('about.html', data=data, ppimg=ppimg)
 
@@ -25,4 +25,4 @@ def submit():
 	return jsonify(result=a + b)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+        app.run(debug=True)
